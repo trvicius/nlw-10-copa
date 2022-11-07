@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-:root {
+body.yellow {
   --card-title-border-color: #746615;
   --card-color-primary: #f7dd43;
   --card-bg-color: #1d1c19;
@@ -46,6 +46,25 @@ body * {
 header {
   margin-bottom: 63px;
   text-align: center;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+#container>select {
+  border-radius: 16px;
+  text-align: center;
+  width: 100px;
+  padding: 8px;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  background-color: yellow;
+
 }
 
 #cards {

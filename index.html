@@ -13,11 +13,19 @@
       rel="stylesheet"
     />
   </head>
-  <body class="blue">
+  <body class="yellow">
     <div id="app">
+      <div id="container">
       <header>
         <img src="./assets/logo.svg" alt="Logo da NLW" />
       </header>
+      <select name="changeColor" id="changeColor" onclick="changeColor(value)">
+        <option value="yellow">Yellow</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+      </div>
+      
       <main id="cards"></main>
     </div>
     <script src="./main.js"></script>

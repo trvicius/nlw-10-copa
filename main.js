@@ -1,3 +1,12 @@
+function changeColor(color) {
+  let el = document.querySelector('body');
+  let className = document.querySelector('body').className
+  el.classList.replace(className, color)
+  
+  let optionElement = document.getElementById('changeColor');
+  optionElement.setAttribute('style', `background-color: ${color}`)
+}
+
 function createGame(player1, hour, player2) {
   return `
   <li>
